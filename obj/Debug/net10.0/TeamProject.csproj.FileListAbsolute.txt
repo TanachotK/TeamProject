@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 C:\Users\Ralph\Documents\GitHub\TeamProject\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\Ralph\Documents\GitHub\TeamProject\bin\Debug\net10.0\appsettings.json
 C:\Users\Ralph\Documents\GitHub\TeamProject\bin\Debug\net10.0\TeamProject.staticwebassets.runtime.json
@@ -96,6 +97,8 @@ C:\Users\Ralph\Documents\GitHub\TeamProject\obj\Debug\net10.0\refint\TeamProject
 C:\Users\Ralph\Documents\GitHub\TeamProject\obj\Debug\net10.0\TeamProject.pdb
 C:\Users\Ralph\Documents\GitHub\TeamProject\obj\Debug\net10.0\TeamProject.genruntimeconfig.cache
 C:\Users\Ralph\Documents\GitHub\TeamProject\obj\Debug\net10.0\ref\TeamProject.dll
+=======
+>>>>>>> Stashed changes
 C:\Project\TeamProject\TeamProject\bin\Debug\net10.0\appsettings.Development.json
 C:\Project\TeamProject\TeamProject\bin\Debug\net10.0\appsettings.json
 C:\Project\TeamProject\TeamProject\bin\Debug\net10.0\TeamProject.staticwebassets.runtime.json
