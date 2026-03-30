@@ -2,9 +2,10 @@ namespace TeamProject.Models;
 
     public class FilmModels
     {
-        public string?  { get; set; }
-        public string?  { get; set; }
-        public string?  { get; set; }
-        public string?  { get; set; }   
+        public string? Titel { get; set; }
+        public string? Genre { get; set; }
+        public string? Åldersgräns { get; set; }
+        public string? Regissör { get; set; }   
     }
 
+,
