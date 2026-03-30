@@ -5,6 +5,6 @@ namespace TeamProject.Models;
         public string? Titel { get; set; }
         public string? Genre { get; set; }
         public string? Åldersgräns { get; set; }
-        public string? Regissör { get; set; }   
+        public string? Recension { get; set; }   
     }
 
