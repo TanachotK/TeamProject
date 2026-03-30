@@ -8,4 +8,3 @@ namespace TeamProject.Models;
         public string? Regissör { get; set; }   
     }
 
-,

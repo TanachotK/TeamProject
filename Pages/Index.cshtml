@@ -4,9 +4,31 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Film(TeamProject)</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div> 
+<div class= "card bg-white">
+    <div class="card-body">
+        
 
+        <form method="post">
+           <div class="mb-3">
+                  <label asp-for="FilmData.Titel" class="form-label">Title</label>
+                <input asp-for="FilmData.Titel" type="text" class="form-control" id="inputTitle">
+            </div>
+            <div class="mb-3">
+                <label asp-for="FilmData.Genre" class="form-label">Genre</label>
+                <input asp-for="FilmData.Genre" type="text" class="form-control" id="inputGenre">
+            </div>
+            <div class="mb-3">
+                <label asp-for="FilmData.Åldersgräns" class="form-label">Age Limit</label>
+                <input asp-for="FilmData.Åldersgräns" type="text" class="form-control" id="inputAgeLimit">
+            </div>
+            <div class="mb-3">
+                <label asp-for="FilmData.Regissör" class="form-label">Director</label>
+                <input asp-for="FilmData.Regissör" type="text" class="form-control" id="inputDirector">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
 
+        </form>
+
+    </div>
+
+</div>
