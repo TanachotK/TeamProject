@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ralph\\Documents\\GitHub\\TeamProject\\TeamProject.csproj": {}
+    "C:\\Users\\Lars\\Documents\\GitHub\\TeamProject\\TeamProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ralph\\Documents\\GitHub\\TeamProject\\TeamProject.csproj": {
+    "C:\\Users\\Lars\\Documents\\GitHub\\TeamProject\\TeamProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ralph\\Documents\\GitHub\\TeamProject\\TeamProject.csproj",
+        "projectUniqueName": "C:\\Users\\Lars\\Documents\\GitHub\\TeamProject\\TeamProject.csproj",
         "projectName": "TeamProject",
-        "projectPath": "C:\\Users\\Ralph\\Documents\\GitHub\\TeamProject\\TeamProject.csproj",
-        "packagesPath": "C:\\Users\\Ralph\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ralph\\Documents\\GitHub\\TeamProject\\obj\\",
+        "projectPath": "C:\\Users\\Lars\\Documents\\GitHub\\TeamProject\\TeamProject.csproj",
+        "packagesPath": "C:\\Users\\Lars\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lars\\Documents\\GitHub\\TeamProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ralph\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Lars\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
