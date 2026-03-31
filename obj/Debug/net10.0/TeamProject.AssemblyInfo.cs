@@ -13,11 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeamProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66aa4b0075d12e69973e13e8aeec81198f405f44")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+903206e6e05d0a09e96fdb71f1fac6827772f1be")]
->>>>>>> 359235f56c46cbd3adc186610772e343382439c4
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e18f3c5fc7e99a91a22fb5a3c4379ae1481e05a")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeamProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeamProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
