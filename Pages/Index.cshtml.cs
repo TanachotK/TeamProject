@@ -5,6 +5,7 @@ namespace TeamProject.Pages;
 
 public class IndexModel : PageModel
 {
+    [BindProperty]
     public Models.FilmModels FilmData { get; set; } = new Models.FilmModels();
     public bool IsSubmitted { get; set; }
 
