@@ -20,4 +20,11 @@ public class IndexModel : PageModel
         // Handle form submission, e.g., save to database or process data
         // For now, just leave it as is or add logic here
     }
+
+    public void OnPostReset()
+    {
+        FilmData = new Models.FilmModels(); // Reset the form data
+        IsSubmitted = false; // Hide the submitted data
+    }
+    
 }

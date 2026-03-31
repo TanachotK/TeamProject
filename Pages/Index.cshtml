@@ -39,9 +39,11 @@
                 <p><strong>Genre:</strong> @Model.FilmData.Genre</p>
                 <p><strong>Åldersgräns:</strong> @Model.FilmData.Åldersgräns</p>
                 <p><strong>Recension:</strong> @Model.FilmData.Recension</p>
+                <form method="post" asp-page-handler="Reset" class="mt-3">
+                    <button type="submit" class="btn btn-secondary">Delete Submit Result</button>
+                </form>
             </div>
         }
-
     </div>
 
 </div>
