@@ -8,19 +8,19 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Ralph\\.nuget\\packages\\": {}
+    "C:\\Users\\dante\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ralph\\Documents\\GitHub\\TeamProject\\TeamProject.csproj",
+      "projectUniqueName": "C:\\Users\\dante\\Documents\\GitHub\\TeamProject\\TeamProject.csproj",
       "projectName": "TeamProject",
-      "projectPath": "C:\\Users\\Ralph\\Documents\\GitHub\\TeamProject\\TeamProject.csproj",
-      "packagesPath": "C:\\Users\\Ralph\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ralph\\Documents\\GitHub\\TeamProject\\obj\\",
+      "projectPath": "C:\\Users\\dante\\Documents\\GitHub\\TeamProject\\TeamProject.csproj",
+      "packagesPath": "C:\\Users\\dante\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dante\\Documents\\GitHub\\TeamProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ralph\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\dante\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
