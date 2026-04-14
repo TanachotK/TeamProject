@@ -12,18 +12,22 @@
            <div class="mb-3">
                   <label asp-for="FilmData.Titel" class="form-label">Titel</label>
                 <input asp-for="FilmData.Titel" type="text" class="form-control" id="inputTitel">
+                <span asp-validation-for="FilmData.Titel" class="text-danger"></span>
             </div>
             <div class="mb-3">
                 <label asp-for="FilmData.Genre" class="form-label">Genre</label>
                 <input asp-for="FilmData.Genre" type="text" class="form-control" id="inputGenre">
+                <span asp-validation-for="FilmData.Genre" class="text-danger"></span>
             </div>
             <div class="mb-3">
                 <label asp-for="FilmData.Åldersgräns" class="form-label">Åldersgräns</label>
                 <input asp-for="FilmData.Åldersgräns" type="text" class="form-control" id="inputÅldersgräns">
+                <span asp-validation-for="FilmData.Åldersgräns" class="text-danger"></span>
             </div>
             <div class="mb-3">
                 <label asp-for="FilmData.Recension" class="form-label">Recension</label>
                 <input asp-for="FilmData.Recension" type="text" class="form-control" id="inputRecension">
+                <span asp-validation-for="FilmData.Recension" class="text-danger"></span>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
 

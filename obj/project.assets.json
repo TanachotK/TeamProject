@@ -8,19 +8,19 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\tanac\\.nuget\\packages\\": {}
+    "C:\\Users\\Lars\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\TeamProject\\TeamProject\\TeamProject.csproj",
+      "projectUniqueName": "C:\\Users\\Lars\\Documents\\GitHub\\TeamProject\\TeamProject.csproj",
       "projectName": "TeamProject",
-      "projectPath": "C:\\Project\\TeamProject\\TeamProject\\TeamProject.csproj",
-      "packagesPath": "C:\\Users\\tanac\\.nuget\\packages\\",
-      "outputPath": "C:\\Project\\TeamProject\\TeamProject\\obj\\",
+      "projectPath": "C:\\Users\\Lars\\Documents\\GitHub\\TeamProject\\TeamProject.csproj",
+      "packagesPath": "C:\\Users\\Lars\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lars\\Documents\\GitHub\\TeamProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tanac\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Lars\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
