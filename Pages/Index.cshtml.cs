@@ -7,30 +7,31 @@ public class IndexModel : PageModel
 {
     [BindProperty]
     public Models.FilmModels FilmData { get; set; } = new Models.FilmModels();
+
     public bool IsSubmitted { get; set; }
 
     public void OnGet()
     {
-
     }
 
-    public void OnPost()
+    public IActionResult OnPost()
     {
         if (!ModelState.IsValid)
         {
-            IsSubmitted = false; // Ensure that the submitted data is not displayed if validation fails
-            return; // If the form data is not valid, return to the page and display validation errors
+            IsSubmitted = false;
+            return Page();
         }
+
         IsSubmitted = true;
-    
-        // Handle form submission, e.g., save to database or process data
-        // For now, just leave it as is or add logic here
+        return Page(); // 
     }
 
-    public void OnPostReset()
+    public IActionResult OnPostReset()
     {
-        FilmData = new Models.FilmModels(); // Reset the form data
-        IsSubmitted = false; // Hide the submitted data
+        ModelState.Clear(); // 
+        FilmData = new Models.FilmModels();
+        IsSubmitted = false;
+
+        return Page(); // 
     }
-    
 }
