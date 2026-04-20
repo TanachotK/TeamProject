@@ -14,7 +14,7 @@ public class FilmModels
 
     [Required(ErrorMessage = "Åldersgräns är obligatoriskt.")]
     [Range(0, 18, ErrorMessage = "Åldersgräns måste vara mellan 0 och 18.")]
-    public string? Åldersgräns { get; set; }
+    public int? Åldersgräns { get; set; }
 
     [StringLength(500, ErrorMessage = "Recension får inte vara längre än 500 tecken.")]
     public string? Recension { get; set; }

@@ -22,22 +22,16 @@ public class IndexModel : PageModel
     }
 }
 
-     public void OnPost()
+     public IActionResult OnPost()
     {
         if (!ModelState.IsValid)
         {
             IsSubmitted = false; // Ensure that the submitted data is not displayed if validation fails
-            return; // If the form data is not valid, return to the page and display validation errors
+            return Page(); // If the form data is not valid, return to the page and display validation errors
         }
+
         IsSubmitted = true;
-    
-        // Handle form submission, e.g., save to database or process data
-        // For now, just leave it as is or add logic here
+        return Page();
     }
 
-    public void OnPostReset()
-    {
-        FilmData = new Models.FilmModels(); // Reset the form data
-        IsSubmitted = false; // Hide the submitted data
-    }
 }
