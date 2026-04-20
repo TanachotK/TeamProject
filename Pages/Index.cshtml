@@ -8,8 +8,7 @@
     <div class="card-body">
         
 
-        <form method="post">
-           <div class="mb-3">
+     <div class="mb-3">
                   <label asp-for="FilmData.Titel" class="form-label">Titel</label>
                 <input asp-for="FilmData.Titel" type="text" class="form-control" id="inputTitel">
                 <span asp-validation-for="FilmData.Titel" class="text-danger"></span>
@@ -31,9 +30,8 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
 
-        
-
-        </form>
+    
+    
 
         @if (Model.IsSubmitted)
         {
