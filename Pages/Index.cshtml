@@ -1,53 +1,82 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Filmhantering";
 }
 
-<div class="card bg-white">
-    <div class="card-body">
-        
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Lägg till ny film</h5>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="mb-3">
+                            <label asp-for="FilmData.Titel" class="form-label">Titel</label>
+                            <input asp-for="FilmData.Titel" type="text" class="form-control">
+                            <span asp-validation-for="FilmData.Titel" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="FilmData.Genre" class="form-label">Genre</label>
+                            <input asp-for="FilmData.Genre" type="text" class="form-control">
+                            <span asp-validation-for="FilmData.Genre" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="FilmData.Åldersgräns" class="form-label">Åldersgräns</label>
+                            <input asp-for="FilmData.Åldersgräns" type="number" class="form-control">
+                            <span asp-validation-for="FilmData.Åldersgräns" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="FilmData.Recension" class="form-label">Recension</label>
+                            <textarea asp-for="FilmData.Recension" class="form-control" rows="3"></textarea>
+                            <span asp-validation-for="FilmData.Recension" class="text-danger"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Lägg till film</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
-        <form method="post">
-           <div class="mb-3">
-                  <label asp-for="FilmData.Titel" class="form-label">Titel</label>
-                <input asp-for="FilmData.Titel" type="text" class="form-control" id="inputTitel">
-                <span asp-validation-for="FilmData.Titel" class="text-danger"></span>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Alla filmer (@Model.Films.Count)</h5>
+                </div>
+                <div class="card-body">
+                    @if (Model.Films.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Titel</th>
+                                        <th>Genre</th>
+                                        <th>Åldersgräns</th>
+                                        <th>Recension</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var film in Model.Films)
+                                    {
+                                        <tr>
+                                            <td>@film.Titel</td>
+                                            <td>@film.Genre</td>
+                                            <td>@film.Åldersgräns</td>
+                                            <td>@(string.IsNullOrEmpty(film.Recension) ? "-" : film.Recension)</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">Inga filmer tillagda än.</p>
+                    }
+                </div>
             </div>
-            <div class="mb-3">
-                <label asp-for="FilmData.Genre" class="form-label">Genre</label>
-                <input asp-for="FilmData.Genre" type="text" class="form-control" id="inputGenre">
-                <span asp-validation-for="FilmData.Genre" class="text-danger"></span>
-            </div>
-            <div class="mb-3">
-                <label asp-for="FilmData.Åldersgräns" class="form-label">Åldersgräns</label>
-                <input asp-for="FilmData.Åldersgräns" type="text" class="form-control" id="inputÅldersgräns">
-                <span asp-validation-for="FilmData.Åldersgräns" class="text-danger"></span>
-            </div>
-            <div class="mb-3">
-                <label asp-for="FilmData.Recension" class="form-label">Recension</label>
-                <input asp-for="FilmData.Recension" type="text" class="form-control" id="inputRecension">
-                <span asp-validation-for="FilmData.Recension" class="text-danger"></span>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-
-        
-
-        </form>
-
-        @if (Model.IsSubmitted)
-        {
-            <div class="mt-3">
-                <h5>Submitted Data:</h5>
-                <p><strong>Titel:</strong> @Model.FilmData.Titel</p>
-                <p><strong>Genre:</strong> @Model.FilmData.Genre</p>
-                <p><strong>Åldersgräns:</strong> @Model.FilmData.Åldersgräns</p>
-                <p><strong>Recension:</strong> @Model.FilmData.Recension</p>
-                <form method="post" asp-page-handler="Reset" class="mt-3">
-                    <button type="submit" class="btn btn-secondary">Delete Submit Result</button>
-                </form>
-            </div>
-        }
+        </div>
     </div>
-
 </div>
