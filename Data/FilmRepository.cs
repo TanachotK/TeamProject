@@ -71,4 +71,16 @@ public class FilmRepository
 
         command.ExecuteNonQuery();
     }
+
+    public void DeleteFilm(int id)
+    {
+        using var connection = new SqliteConnection(ConnectionString);
+        connection.Open();
+
+        var command = connection.CreateCommand();
+        command.CommandText = "DELETE FROM Films WHERE Id = $id";
+        command.Parameters.AddWithValue("$id", id);
+
+        command.ExecuteNonQuery();
+    }
 }

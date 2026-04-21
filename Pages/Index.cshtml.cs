@@ -33,12 +33,19 @@ public class IndexModel : PageModel
         }
 
         _repository.AddFilm(FilmData);
+        FilmData = new Models.FilmModels();
         Films = _repository.GetAllFilms();
     }
 
     public void OnPostReset()
     {
         FilmData = new Models.FilmModels();
+        Films = _repository.GetAllFilms();
+    }
+
+    public void OnPostDelete(int id)
+    {
+        _repository.DeleteFilm(id);
         Films = _repository.GetAllFilms();
     }
 
