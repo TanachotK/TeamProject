@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dante\\Documents\\GitHub\\TeamProject\\TeamProject.csproj": {}
+    "C:\\Project\\TeamProject\\TeamProject\\TeamProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dante\\Documents\\GitHub\\TeamProject\\TeamProject.csproj": {
+    "C:\\Project\\TeamProject\\TeamProject\\TeamProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dante\\Documents\\GitHub\\TeamProject\\TeamProject.csproj",
+        "projectUniqueName": "C:\\Project\\TeamProject\\TeamProject\\TeamProject.csproj",
         "projectName": "TeamProject",
-        "projectPath": "C:\\Users\\dante\\Documents\\GitHub\\TeamProject\\TeamProject.csproj",
-        "packagesPath": "C:\\Users\\dante\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dante\\Documents\\GitHub\\TeamProject\\obj\\",
+        "projectPath": "C:\\Project\\TeamProject\\TeamProject\\TeamProject.csproj",
+        "packagesPath": "C:\\Users\\tanac\\.nuget\\packages\\",
+        "outputPath": "C:\\Project\\TeamProject\\TeamProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dante\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\tanac\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
