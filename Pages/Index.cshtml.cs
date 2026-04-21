@@ -21,16 +21,24 @@ public class IndexModel : PageModel
     {
         Films = _repository.GetAllFilms();
     }
+}
 
-    public IActionResult OnPost()
+     public void OnPost()
     {
         if (!ModelState.IsValid)
         {
-            Films = _repository.GetAllFilms();
-            return Page();
+            IsSubmitted = false; // Ensure that the submitted data is not displayed if validation fails
+            return; // If the form data is not valid, return to the page and display validation errors
         }
+        IsSubmitted = true;
+    
+        // Handle form submission, e.g., save to database or process data
+        // For now, just leave it as is or add logic here
+    }
 
-        _repository.AddFilm(FilmData);
-        return RedirectToPage();
+    public void OnPostReset()
+    {
+        FilmData = new Models.FilmModels(); // Reset the form data
+        IsSubmitted = false; // Hide the submitted data
     }
 }
