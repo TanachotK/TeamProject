@@ -4,6 +4,8 @@ namespace TeamProject.Models;
 
 public class FilmModels
 {
+    public int Id { get; set; }
+
     [Required(ErrorMessage = "Titel är obligatoriskt.")]
     [StringLength(100, ErrorMessage = "Titel får inte vara längre än 100 tecken.")]
     public string? Titel { get; set; }
@@ -19,5 +21,4 @@ public class FilmModels
     [StringLength(500, ErrorMessage = "Recension får inte vara längre än 500 tecken.")]
     public string? Recension { get; set; }
 }
-
 
